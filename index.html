@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachid Outaghzante | Full Stack Developer Portfolio</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Portfolio of Rachid Outaghzante, a Digital Development (Full Stack) student/graduate from OFPPT Azilal. Showcasing projects, skills, and contact details.">
+    <meta name="keywords" content="Rachid Outaghzante, OFPPT Azilal, Full Stack Developer, Developpeur Digital, Morocco, Web Developer, JavaScript, Python, Java, HTML, CSS, Bootstrap">
+    <meta name="author" content="Rachid Outaghzante">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/profile.jpg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Ambient Background Elements -->
+    <div class="ambient-glow bg-glow-1"></div>
+    <div class="ambient-glow bg-glow-2"></div>
+    <div class="ambient-glow bg-glow-3"></div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar-header">
+        <div class="navbar-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>Rachid<span class="logo-accent">.O /&gt;</span>
+            </a>
+            
+            <!-- Desktop Nav Links -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active" data-en="Home" data-fr="Accueil">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-en="About" data-fr="À Propos">About</a></li>
+                    <li><a href="#skills" class="nav-link" data-en="Skills" data-fr="Compétences">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" data-en="Projects" data-fr="Projets">Projects</a></li>
+                    <li><a href="#contact" class="nav-link" data-en="Contact" data-fr="Contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Action Buttons (Theme + Language + Mobile menu trigger) -->
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="btn-icon" data-en-title="Toggle theme" data-fr-title="Changer de thème" title="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                
+                <!-- Language Switcher -->
+                <button id="lang-switch" class="btn-lang" data-lang="en">
+                    <span class="lang-text">FR</span>
+                    <i class="fa-solid fa-globe"></i>
+                </button>
+                
+                <!-- Mobile Nav Toggle -->
+                <button id="mobile-toggle" class="btn-icon mobile-menu-btn" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="#home" class="mobile-link" data-en="Home" data-fr="Accueil">Home</a></li>
+            <li><a href="#about" class="mobile-link" data-en="About" data-fr="À Propos">About</a></li>
+            <li><a href="#skills" class="mobile-link" data-en="Skills" data-fr="Compétences">Skills</a></li>
+            <li><a href="#projects" class="mobile-link" data-en="Projects" data-fr="Projets">Projects</a></li>
+            <li><a href="#contact" class="mobile-link" data-en="Contact" data-fr="Contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="section-container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span data-en="Available for Opportunities" data-fr="Disponible pour Opportunités">Available for Opportunities</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span data-en="Hello, I'm" data-fr="Bonjour, je suis">Hello, I'm</span>
+                        <span class="highlight-text">Rachid Outaghzante</span>
+                    </h1>
+                    
+                    <!-- Dynamic Typing Text -->
+                    <h2 class="hero-subtitle">
+                        <span data-en="I am a" data-fr="Je suis ">I am a</span>
+                        <span class="typing-text" id="typing-element">Full Stack Developer</span>
+                    </h2>
+                    
+                    <p class="hero-description" 
+                       data-en="Specialized in Digital Development. Graduate from OFPPT Azilal, focused on building clean, efficient, and interactive web systems that bridge powerful backend logic with elegant frontend experiences."
+                       data-fr="Spécialisé en Développement Digital. Lauréat de l'OFPPT Azilal, orienté vers la création de systèmes web propres, efficaces et interactifs, alliant une logique backend robuste à des interfaces frontend élégantes.">
+                        Specialized in Digital Development. Graduate from OFPPT Azilal, focused on building clean, efficient, and interactive web systems that bridge powerful backend logic with elegant frontend experiences.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span data-en="View Projects" data-fr="Voir mes Projets">View Projects</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span data-en="Get in Touch" data-fr="Me Contacter">Get in Touch</span>
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-socials">
+                        <span class="socials-label" data-en="Follow Me:" data-fr="Suivez-moi :">Follow Me:</span>
+                        <a href="https://github.com/rachidoutagh-ai" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/rachid-outaghzante" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:rachidoutagh@gmail.com" class="social-link" title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper">
+                    <div class="image-border-glow"></div>
+                    <div class="image-container">
+                        <img src="assets/profile.jpg" alt="Rachid Outaghzante" class="hero-profile-img">
+                    </div>
+                    <div class="tech-floating-badges">
+                        <div class="floating-badge badge-1"><i class="fa-brands fa-python text-python"></i> Python</div>
+                        <div class="floating-badge badge-2"><i class="fa-brands fa-js text-js"></i> JavaScript</div>
+                        <div class="floating-badge badge-3"><i class="fa-brands fa-java text-java"></i> Java</div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-indicator" aria-label="Scroll Down">
+                <span class="mouse-icon">
+                    <span class="scroll-wheel"></span>
+                </span>
+            </a>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="subtitle-highlight" data-en="About Me" data-fr="À Propos">About Me</span>
+                    <h2 class="section-title" data-en="Who is Rachid?" data-fr="Qui est Rachid ?">Who is Rachid?</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-card-intro glass-card">
+                        <h3 data-en="Passionate Web Developer" data-fr="Développeur Web Passionné">Passionate Web Developer</h3>
+                        <p data-en="I discovered my passion for technology and programming, leading me to specialize in Digital Development at OFPPT Azilal. During my training, I acquired strong foundations in both frontend and backend development."
+                           data-fr="J'ai découvert ma passion pour la technologie et la programmation, ce qui m'a amené à me spécialiser en Développement Digital à l'OFPPT Azilal. Au cours de ma formation, j'ai acquis de solides bases en développement frontend et backend."></p>
+                        
+                        <p data-en="I enjoy solving complex problems, building interactive web applications using HTML, CSS, JavaScript, and Bootstrap, as well as developing backend logic with Python and Java. I'm always looking to learn and grow."
+                           data-fr="J'aime résoudre des problèmes complexes et développer des applications web interactives avec HTML, CSS, JavaScript et Bootstrap, ainsi qu'une logique backend avec Python et Java. Je cherche toujours à progresser."></p>
+                    </div>
+                    
+                    <div class="about-details">
+                        <div class="detail-card glass-card">
+                            <div class="detail-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="detail-text">
+                                <h4 data-en="Education" data-fr="Éducation">Education</h4>
+                                <p data-en="Digital Development (Full Stack)" data-fr="Développement Digital (Full Stack)"></p>
+                                <span class="detail-sub" data-en="OFPPT Azilal" data-fr="OFPPT Azilal">OFPPT Azilal</span>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-card glass-card">
+                            <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="detail-text">
+                                <h4 data-en="Location" data-fr="Localisation">Location</h4>
+                                <p data-en="Azilal, Morocco" data-fr="Azilal, Maroc">Azilal, Morocco</p>
+                                <span class="detail-sub" data-en="Open to Relocation" data-fr="Mobile">Open to Relocation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-card glass-card">
+                            <div class="detail-icon"><i class="fa-solid fa-code"></i></div>
+                            <div class="detail-text">
+                                <h4 data-en="Speciality" data-fr="Spécialité">Speciality</h4>
+                                <p data-en="Web & Information Systems" data-fr="Systèmes Web & Info">Web & Information Systems</p>
+                                <span class="detail-sub">HTML / CSS / JavaScript / Bootstrap</span>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-card glass-card">
+                            <div class="detail-icon"><i class="fa-solid fa-language"></i></div>
+                            <div class="detail-text">
+                                <h4 data-en="Languages" data-fr="Langues">Languages</h4>
+                                <p data-en="Arabic, French, English" data-fr="Arabe, Français, Anglais">Arabic, French, English</p>
+                                <span class="detail-sub" data-en="Bilingual Portfolio" data-fr="Portfolio Bilingue">Bilingual Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="subtitle-highlight" data-en="My Skills" data-fr="Compétences">My Skills</span>
+                    <h2 class="section-title" data-en="What I Do Best" data-fr="Mon Savoir-Faire">What I Do Best</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Frontend Skills -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-laptop-code category-icon"></i>
+                            <h3 data-en="Frontend Development" data-fr="Développement Frontend">Frontend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">HTML5 / CSS3</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript (ES6+)</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Bootstrap 5</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Programming Languages -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code category-icon"></i>
+                            <h3 data-en="Programming Languages" data-fr="Langages de Programmation">Programming Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Java</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools & Workflow -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-toolbox category-icon"></i>
+                            <h3 data-en="Tools & Methods" data-fr="Outils & Méthodes">Tools & Methods</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Git / GitHub</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">VS Code / Dev Tools</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">OOP Concepts</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Problem Solving</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="subtitle-highlight" data-en="My Portfolio" data-fr="Mon Portfolio">My Portfolio</span>
+                    <h2 class="section-title" data-en="Recent Works" data-fr="Projets Récents">Recent Works</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="projects-container">
+                    <!-- Featured Project: Système d'Information -->
+                    <div class="project-featured glass-card">
+                        <div class="project-featured-img">
+                            <!-- Overlay and Link -->
+                            <div class="project-img-overlay"></div>
+                            <div class="project-mockup-wrapper">
+                                <div class="mockup-header">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                    <span class="mockup-url">rachidoutagh-ai.github.io/Systeme_Information</span>
+                                </div>
+                                <div class="mockup-body">
+                                    <!-- A styling system dashboard content created using standard SVG/CSS to look premium and authentic -->
+                                    <div class="fake-dashboard">
+                                        <div class="fake-sidebar">
+                                            <div class="fake-dot"></div>
+                                            <div class="fake-line short"></div>
+                                            <div class="fake-line"></div>
+                                            <div class="fake-line"></div>
+                                            <div class="fake-line"></div>
+                                        </div>
+                                        <div class="fake-main">
+                                            <div class="fake-nav"></div>
+                                            <div class="fake-widgets">
+                                                <div class="fake-widget"></div>
+                                                <div class="fake-widget"></div>
+                                                <div class="fake-widget"></div>
+                                            </div>
+                                            <div class="fake-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-featured-info">
+                            <div class="project-badge" data-en="Featured Project" data-fr="Projet Phare">Featured Project</div>
+                            <h3 class="project-title" data-en="Information System Management" data-fr="Gestion du Système d'Information">Information System Management</h3>
+                            
+                            <p class="project-desc"
+                               data-en="A comprehensive web application designed to manage operational workflows, resource allocations, and data metrics efficiently. Built with a clean frontend architecture, featuring interactive UI and smooth user experience."
+                               data-fr="Une application web complète conçue pour administrer efficacement les flux de travail, l'allocation des ressources et les métriques de données. Développée avec une interface frontend soignée et une expérience utilisateur fluide.">
+                               A comprehensive web application designed to manage operational workflows, resource allocations, and data metrics efficiently. Built with a clean frontend architecture, featuring interactive UI and smooth user experience.
+                            </p>
+                            
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://rachidoutagh-ai.github.io/Systeme_Information/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <span data-en="Live Demo" data-fr="Démo Live">Live Demo</span>
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                                <a href="https://github.com/rachidoutagh-ai/Systeme_Information" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <span>GitHub</span>
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Grid of other projects (Mock Projects to show versatility) -->
+                    <div class="projects-grid">
+                        <!-- Card 2: Interactive Web App -->
+                        <div class="project-card glass-card">
+                            <div class="project-card-header">
+                                <i class="fa-solid fa-globe project-card-icon"></i>
+                                <span class="project-type" data-en="Web Development" data-fr="Développement Web">Web Development</span>
+                            </div>
+                            <h4 class="project-card-title" data-en="Interactive Web Application" data-fr="Application Web Interactive">Interactive Web Application</h4>
+                            <p class="project-card-desc"
+                               data-en="A dynamic and responsive web application with a clean interface. Includes interactive elements, smooth animations, and a well-structured layout built with vanilla JavaScript and Bootstrap."
+                               data-fr="Une application web dynamique et responsive avec une interface soignée. Comprend des éléments interactifs, des animations fluides et une mise en page structurée avec JavaScript et Bootstrap.">
+                                A dynamic and responsive web application with a clean interface. Includes interactive elements, smooth animations, and a well-structured layout built with vanilla JavaScript and Bootstrap.
+                            </p>
+                            <div class="project-card-tags">
+                                <span>HTML / CSS</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <a href="https://github.com/rachidoutagh-ai" target="_blank" rel="noopener noreferrer" class="card-link">
+                                    <span>Code Source</span>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 3: Python Project -->
+                        <div class="project-card glass-card">
+                            <div class="project-card-header">
+                                <i class="fa-solid fa-terminal project-card-icon"></i>
+                                <span class="project-type" data-en="Python Development" data-fr="Développement Python">Python Development</span>
+                            </div>
+                            <h4 class="project-card-title" data-en="Python Automation Script" data-fr="Script d'Automatisation Python">Python Automation Script</h4>
+                            <p class="project-card-desc"
+                               data-en="A Python-based project focused on automation and data processing. Uses object-oriented programming principles to create a structured, efficient, and maintainable solution."
+                               data-fr="Un projet Python axé sur l'automatisation et le traitement de données. Utilise les principes de la programmation orientée objet pour créer une solution structurée, efficace et maintenable.">
+                                A Python-based project focused on automation and data processing. Uses object-oriented programming principles to create a structured, efficient, and maintainable solution.
+                            </p>
+                            <div class="project-card-tags">
+                                <span>Python</span>
+                                <span>OOP</span>
+                                <span>Automation</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <a href="https://github.com/rachidoutagh-ai" target="_blank" rel="noopener noreferrer" class="card-link">
+                                    <span>Code Source</span>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="subtitle-highlight" data-en="Contact Me" data-fr="Contact">Contact Me</span>
+                    <h2 class="section-title" data-en="Let's Work Together" data-fr="Travaillons Ensemble">Let's Work Together</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info glass-card">
+                        <h3 data-en="Contact Information" data-fr="Mes Coordonnées">Contact Information</h3>
+                        <p data-en="Feel free to reach out to me! Whether you want to discuss a project, query about opportunities, or just say hello, my inbox is open."
+                           data-fr="N'hésitez pas à me contacter ! Que ce soit pour discuter d'un projet, d'une opportunité d'emploi ou simplement pour dire bonjour, ma boîte de réception est ouverte.">
+                        </p>
+                        
+                        <div class="contact-details-list">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-text">
+                                    <span class="label">Email</span>
+                                    <a href="mailto:rachidoutagh@gmail.com" class="value">rachidoutagh@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <div class="contact-text">
+                                    <span class="label">LinkedIn</span>
+                                    <a href="https://linkedin.com/in/rachid-outaghzante" target="_blank" rel="noopener noreferrer" class="value">Rachid Outaghzante</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div class="contact-text">
+                                    <span class="label">WhatsApp</span>
+                                    <a href="https://wa.me/212710261855" target="_blank" rel="noopener noreferrer" class="value">+212 710261855</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="contact-text">
+                                    <span class="label" data-en="Location" data-fr="Localisation">Location</span>
+                                    <span class="value" data-en="Azilal, Morocco" data-fr="Azilal, Maroc">Azilal, Morocco</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="status-indicator">
+                            <div class="pulse-ring"></div>
+                            <span data-en="Actively looking for full-stack opportunities" data-fr="Recherche activement des opportunités Full-Stack">Actively looking for full-stack opportunities</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form-card glass-card">
+                        <form id="portfolio-contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" data-en="Name" data-fr="Nom">Name</label>
+                                    <input type="text" id="name" required placeholder="John Doe">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email" data-en="Email Address" data-fr="Adresse Email">Email Address</label>
+                                    <input type="email" id="email" required placeholder="john@example.com">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="message" data-en="Message" data-fr="Message">Message</label>
+                                    <textarea id="message" rows="5" required placeholder="Hi Rachid, I would like to work with you on..."></textarea>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span data-en="Send Message" data-fr="Envoyer le Message">Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span class="logo-accent">&lt;</span>Rachid<span class="logo-accent">.O /&gt;</span>
+            </div>
+            
+            <p class="copyright">
+                &copy; <span id="current-year">2026</span> Rachid Outaghzante. <span data-en="All Rights Reserved." data-fr="Tous Droits Réservés.">All Rights Reserved.</span>
+            </p>
+            
+            <div class="footer-socials">
+                <a href="https://github.com/rachidoutagh-ai" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/rachid-outaghzante" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:rachidoutagh@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Success Toast Modal -->
+    <div class="success-toast" id="success-toast">
+        <div class="toast-content">
+            <i class="fa-solid fa-circle-check toast-icon"></i>
+            <div class="toast-text">
+                <h4 data-en="Message Sent!" data-fr="Message Envoyé !">Message Sent!</h4>
+                <p data-en="Thank you, I will get back to you soon." data-fr="Merci, je vous répondrai dès que possible.">Thank you, I will get back to you soon.</p>
+            </div>
+        </div>
+        <button class="toast-close" onclick="document.getElementById('success-toast').classList.remove('show')">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
